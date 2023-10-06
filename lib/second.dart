@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_basics/provider.dart';
 
@@ -17,9 +18,9 @@ class _SecondState extends State<Second> {
         builder: (context, numbermodel, child) => Scaffold(
               floatingActionButton: FloatingActionButton(
                 onPressed: () {
-                  numbermodel.add();
+                  numbermodel.minus();
                 },
-                child: Icon(Icons.add),
+                child: Icon(Icons.exposure_minus_1_outlined),
               ),
               appBar: AppBar(
                 title: Text(
@@ -43,7 +44,7 @@ class _SecondState extends State<Second> {
                       itemCount: numbermodel.Num.length,
                       itemBuilder: (context, index) {
                         return Text(
-                          numbermodel.Num[index].toString(),
+                          " ${numbermodel.Num[index].toString()} ",
                           style: TextStyle(fontSize: 30),
                         );
                       },

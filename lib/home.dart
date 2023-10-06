@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
             onPressed: () {
               numbermodel.add();
             },
-            child: Icon(Icons.add),
+            child: Icon(Icons.plus_one_outlined),
           ),
           appBar: AppBar(
             title: Text(
@@ -67,7 +67,8 @@ class _HomeState extends State<Home> {
                     Navigator.of(context).push(
                         MaterialPageRoute(builder: (context) => Second()));
                   },
-                )
+                ),
+                //Spacer()
               ],
             ),
           ))),
