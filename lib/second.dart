@@ -11,7 +11,6 @@ class Second extends StatefulWidget {
 }
 
 class _SecondState extends State<Second> {
-  List<int> Num = [1, 2, 3, 4];
   @override
   Widget build(BuildContext context) {
     return Consumer<numberlist>(
